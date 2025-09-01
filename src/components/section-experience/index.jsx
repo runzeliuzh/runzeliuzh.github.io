@@ -12,7 +12,7 @@ const SectionExperience = ({ experience }) => {
           <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
             <div className="flex-1">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="font-semibold text-gray-900 text-lg">
+                <h3 className="font-semibold text-gray-900 text-base">
                   {item.link ? (
                     <a 
                       href={item.link} 
@@ -41,7 +41,7 @@ const SectionExperience = ({ experience }) => {
           </div>
           
           <div 
-            className="text-gray-600 mb-3 leading-relaxed font-light"
+            className="text-gray-600 mb-3 leading-relaxed font-light text-sm"
             dangerouslySetInnerHTML={{ __html: item.description }}
           />
           
