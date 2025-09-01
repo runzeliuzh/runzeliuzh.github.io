@@ -28,14 +28,14 @@ const FeaturedProjects = () => {
 
   // Create mapping for project links
   const projectRoutes = {
-    'Diversity-Driven News Recommendation System': '/projects/informfully',
+    // 'Diversity-Driven News Recommender System': '/projects/informfully',
 
   };
 
   // Map project names to their time periods
   const projectPeriods = {
     'AI Fashion Assistant': 'Jul 2025 – Aug 2025',
-    'Diversity-Driven News Recommendation System': 'Apr 2023 – June 2025',
+    'Diversity-Driven News Recommender System': 'Apr 2023 – June 2025',
     'Virtual Clothing Simulation and Fashion Applications': 'Sep 2016 – Apr 2021',
     'Drawing & Guessing: Interactive Web Game': 'Mar 2023 – May 2023',
     'Chinese News Classification System': 'Sep 2022',
