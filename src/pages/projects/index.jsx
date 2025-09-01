@@ -20,8 +20,8 @@ const ProjectsIndexPage = () => {
       status: 'Live Demo Available',
       statusColor: 'bg-green-100 text-green-800',
       links: {
-        github: 'https://github.com/runzeliuzh/llm-rag-fashion-agent',
-        demo: 'https://llm-rag-fashion-agent.vercel.app/'
+        github: 'https://github.com/runzeliuzh/ai-fashion-assistant',
+        demo: 'https://llm-rag-fashion.vercel.app'
       },
       achievements: [
         'Deployed AI chatbot'

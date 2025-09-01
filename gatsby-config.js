@@ -18,8 +18,8 @@ I am passionate about applying AI to help solve real-world problems, making them
       {
         name: 'AI Fashion Assistant',
         description: `A fashion chatbot powered by Retrieval-Augmented Generation (RAG) and Large Language Models. The application integrates fashion knowledge base to provide fashion advice and outfit recommendations through conversational AI.`,
-        link: 'https://github.com/runzeliuzh/llm-rag-fashion-agent',
-        demoLink: 'https://llm-rag-fashion-agent.vercel.app/',
+        link: 'https://github.com/runzeliuzh/ai-fashion-assistant',
+        demoLink: 'https://llm-rag-fashion.vercel.app',
         publication: null,
       },
       {
