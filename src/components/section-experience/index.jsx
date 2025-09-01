@@ -8,30 +8,32 @@ const SectionExperience = ({ experience }) => {
   return (
     <Section title="Experience">
       {experience.map((item, index) => (
-        <div key={item.name} className="mb-6 bg-gray-50 rounded-lg p-4 border-l-4 border-green-500">
+        <div key={item.name} className="mb-4 bg-white rounded-lg p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all duration-200">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
             <div className="flex-1">
-              <h3 className="font-semibold text-lg text-gray-900 mb-1">
-                {item.link ? (
-                  <a 
-                    href={item.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-600 transition-colors"
-                  >
-                    {item.name}
-                  </a>
-                ) : (
-                  item.name
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-semibold text-gray-900 text-lg">
+                  {item.link ? (
+                    <a 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-600 transition-colors"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    item.name
+                  )}
+                </h3>
+                {item.period && (
+                  <span className="text-sm text-gray-500 font-medium bg-gray-100 px-2 py-1 rounded">
+                    {item.period}
+                  </span>
                 )}
-              </h3>
-              {item.period && (
-                <p className="text-sm text-green-700 font-medium mb-1">
-                  📅 {item.period}
-                </p>
-              )}
+              </div>
               {item.location && (
-                <p className="text-sm text-gray-600 mb-2">
+                <p className="text-sm text-gray-600 mb-3 font-light">
                   📍 {item.location}
                 </p>
               )}
@@ -39,13 +41,13 @@ const SectionExperience = ({ experience }) => {
           </div>
           
           <div 
-            className="text-gray-700 mb-3 leading-relaxed"
+            className="text-gray-600 mb-3 leading-relaxed font-light"
             dangerouslySetInnerHTML={{ __html: item.description }}
           />
           
           {item.skills && (
             <div className="mb-3">
-              <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Technologies:</h4>
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm">Key Technologies:</h4>
               <div className="flex flex-wrap gap-2">
                 {item.skills.map((skill, skillIndex) => (
                   <span 
@@ -61,12 +63,12 @@ const SectionExperience = ({ experience }) => {
           
           {item.achievements && (
             <div>
-              <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Achievements:</h4>
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm">Key Achievements:</h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 {item.achievements.map((achievement, achIndex) => (
                   <li key={achIndex} className="flex items-start">
-                    <span className="text-green-600 mr-2 mt-0.5">✓</span>
-                    {achievement}
+                    <span className="text-blue-600 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>{achievement}</span>
                   </li>
                 ))}
               </ul>
